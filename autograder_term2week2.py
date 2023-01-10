@@ -2,6 +2,9 @@ import numpy.testing as npt
 from time import time
 from numpy import isclose, allclose
 from math import cos, exp, sin, pi
+usernamefile = open('usernames.csv', 'r')
+usernames = list(csv.reader(usernamefile))[0]
+usernamefile.close()
 print("Autograder loaded successfully!")
 print("Remember to always restart and run all from the Kernel menu before submitting!")
 def question0(_globals):
