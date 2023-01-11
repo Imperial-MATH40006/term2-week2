@@ -2,6 +2,7 @@ import numpy.testing as npt
 from time import time
 from numpy import isclose, allclose
 from math import cos, exp, sin, pi
+import csv
 usernamefile = open('usernames.csv', 'r')
 usernames = list(csv.reader(usernamefile))[0]
 usernamefile.close()
